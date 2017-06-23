@@ -24,7 +24,7 @@ import network
 sta_if = network.WLAN(network.STA_IF)
 sta_if.active(True)
 sta_if.ifconfig(('192.168.4.5','255.255.255.0','192.168.1.1','192.168.0.1'))
-sta_if.connect('dinalinda1','dinalinda1')
+sta_if.connect('dinalinda','dinalinda')
 
 # set the simple client udp 
 from socket import *

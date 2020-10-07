@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+Este script implementa metodos put, get e delete para atualizar dados no google firebase diretamente do dispositivo IoT (nodeMcu8266)
+"""
 import urequests
 import json
 

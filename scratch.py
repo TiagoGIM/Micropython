@@ -17,9 +17,9 @@ class iotreta:
 
 	def send_thing(self , s, data, tipo = 'date'):
 
-		data = {tipo:{
+		data = {thing:{
 						'auth_thing':s[0],
-						'auth,user':s[1],
+						'auth_user':s[1],
 						'data':data
 						}
 				}

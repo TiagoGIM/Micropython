@@ -20,7 +20,7 @@ class iotreta:
 		data = {tipo:{
 						'auth_thing':s[0],
 						'auth,user':s[1],
-						'date':data
+						'data':data
 						}
 				}
 

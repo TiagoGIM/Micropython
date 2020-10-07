@@ -1,8 +1,12 @@
 #set router mode in your server
+"""
+Este codigo foi feito para ajudar @dinalivia em um de seus projetos de graduação.
+"""
 
 import network
 ap_if = network.WLAN(network.AP_IF)
-ap_if.config(essid="dinalinda", authmode=network.AUTH_WPA_WPA2_PSK, password="dinalinda")
+#configurando o nodeMCU no modo acess point
+ap_if.config(essid="dinalivia", authmode=network.AUTH_WPA_WPA2_PSK, password="dinalivia")
 
 # set the simple server
 
@@ -24,7 +28,7 @@ import network
 sta_if = network.WLAN(network.STA_IF)
 sta_if.active(True)
 sta_if.ifconfig(('192.168.4.5','255.255.255.0','192.168.1.1','192.168.0.1'))
-sta_if.connect('dinalinda','dinalinda')
+sta_if.connect('dinalivia','dinalivia')
 
 # set the simple client udp 
 from socket import *
